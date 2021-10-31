@@ -1,0 +1,270 @@
+.nav-logo {
+  padding-left: 3%;
+}
+
+#navbarSupportedContent {
+  height: 120px;
+}
+
+#navbarCenter {
+  margin-left: auto;
+  margin-right: auto;
+}
+#navbarCenter ul {
+  width: 70%;
+    margin: auto;
+}
+
+#navbarCenter li {
+  padding: 0 2em 0 2em;
+}
+
+.nav-cart {
+  margin-left: 18px;
+  position: relative;
+}
+
+
+.section__hero {
+background: url(/image/bg-hero.jpg) no-repeat center / cover;
+}
+.section__hero2 {
+background: url(/image/banner.jpg) no-repeat center / cover;
+}
+.section__hero3 {
+  background: url(/image/untitled-design_orig.jpg) no-repeat center / cover;
+}
+.hero__title {
+font-family: 'Great Vibes';
+font-size: 100px;
+font-weight: 300;
+color: #c14679;
+line-height: 1;
+}
+.hero__phrase {
+color: #151515;
+text-transform: uppercase;
+letter-spacing: 10px;
+font-size: 36px;
+position: relative;
+padding-left: 85px;
+  font-family: 'Poppins';
+}
+
+.hero__sentence {
+font-size: 24px;
+color: #777777;
+margin: 30px 0;
+font-weight: 400;
+width: clamp(30ch, 50%, 30ch);
+letter-spacing: 2px;
+  font-family: 'Poppins';
+}
+.btn {
+position: relative;
+overflow: hidden;
+display: inline-block;
+padding: 14px 34px;
+font-size: 14px;
+border: 2px solid;
+line-height: 2;
+border-radius: 4px;
+font-weight: 700;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+white-space: nowrap;
+text-overflow: ellipsis;
+text-align: center;
+vertical-align: middle;
+user-select: none;
+will-change: transform;
+transition: all 250ms ease-in-out;
+}
+
+/* Button primary */
+.btn--primary,
+.btn--primary:focus,
+.btn--primary-2,
+.btn--primary-2:focus {
+color: #fff;
+background-color: #c14679;
+border-color: #c14679;
+}
+
+.btn--primary.btn--zakaria::after,
+.btn--primary-2.btn--zakaria::after {
+background-color: #c14679;
+}
+.btn--primary:hover,
+.btn--primary:active {
+background-color: #a43664;
+color: #fff;
+border-color: #a43664;
+}
+.btn--primary-2:hover,
+.btn--primary-2:active {
+background-color: #151515;
+color: #fff;
+border-color: #151515;
+}
+
+/* Button outline */
+.btn--outline,
+.btn--outline:focus {
+color: #151515;
+background-color: transparent;
+border-color: #c14679;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+color: #fff;
+background-color: #c14679;
+border-color: #c14679;
+}
+.btn--outline.btn--zakaria::after {
+background-color: #fff;
+}
+
+/* Button animation */
+.btn--zakaria {
+transition: all 0.3s ease-in-out;
+z-index: 1;
+}
+
+.btn--zakaria::after {
+position: absolute;
+content: "";
+top: 50%;
+left: 50%;
+padding: 50% 50%;
+border-radius: 50%;
+transform: translate3d(-50%, -50%, 0) scale(1);
+transition: inherit;
+pointer-events: none;
+z-index: -1;
+}
+.btn--zakaria:hover::after {
+transform: translate3d(-50%, -50%, 0) scale(0);
+}
+
+/* Button size */
+.btn--lg {
+padding: 19px 50px;
+}
+.btn--md {
+padding: 15px 38px;
+}
+.btn--sm {
+padding: 11px 30px;
+}
+
+/* Button shadow */
+.btn--shadow {
+box-shadow: rgba(149, 157, 165, 0.7) 2px 6px 15px;
+}
+
+/* Button Icon */
+.btn--icon {
+font-size: 22px;
+width: 50px;
+height: 50px;
+padding: 0 5px;
+border-radius: 50%;
+}
+.btn--icon i {
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+height: 100%;
+}
+
+/* Button Link */
+.btn--link {
+position: relative;
+padding: 12px 22px;
+font-weight: 600;
+letter-spacing: 2px;
+text-transform: uppercase;
+transition: 0.2s ease-in-out;
+color: #777777;
+}
+.btn--link:hover {
+transform: translateY(10px);
+}
+.btn--link::after {
+content: "";
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translateX(-50%);
+width: calc(100% - 60px);
+height: 100%;
+border: 2px solid transparent;
+border-bottom-color: inherit;
+transition: all 0.2s ease;
+}
+.btn--link:hover::after {
+width: 100%;
+border-color: inherit;
+transition: all 0.2s ease-out;
+}
+
+/* Button Effect */
+.ebtn {
+position: relative;
+}
+.ebtn:focus::after {
+animation: buttonEffect 0.5s ease-out forwards;
+}
+.ebtn::after {
+content: "";
+position: absolute;
+top: 50%;
+left: 50%;
+margin: -18px 0 0 -15px;
+width: 30px;
+height: 30px;
+border-radius: 50%;
+opacity: 0;
+pointer-events: none;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+box-shadow: inset 0 0 0 35px rgba(221, 221, 221, 0.9);
+}
+
+.promo__content {
+background: url(/image/promo.jpg) no-repeat top / cover;
+padding: 75px 30px 80px;
+border: 10px solid #f3f7f8;
+text-align: center;
+background-size: auto;
+height: 490px;
+transform: translateY(-50px);
+}
+.promo__title {
+font-family: 'Great Vibes';
+color: #c14679;
+font-size: 32px;
+letter-spacing: 2px;
+}
+.promo__paragraph {
+width: clamp(45ch, 50%, 75ch);
+margin: 20px auto;
+font-size: 18px;
+line-height: 1.6;
+  font-family: 'Poppins';
+  color: #777777;
+}
+
+.nav-item:hover {
+  background-color: rgba(194, 53, 100, 0.05);
+  border-color: rgba(194, 53, 100, 0.1);
+}
+.test-js {
+  color: #333;
+  display: none;
+}
+.test-js.active {
+  display: block;
+}
